@@ -1,0 +1,107 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--left-bar-color);
+}
+.login__form {
+  width: 427px;
+  border-radius: 23px;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  background: var(--modal-bg-color);
+}
+.login__input {
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px 15px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: var(--font-color);
+  border: 0.7px solid var(--modal-input-border-color);
+  background: var(--modal-element-hover-bg-color);
+
+  &::placeholder {
+    color: var(--placeholder-color);
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+}
+.login__header {
+  padding: 0;
+  margin: 0 0 22px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+  color: var(--font-color);
+}
+.login__button {
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+
+  padding: 7px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 32px 0 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .2s ease;
+
+  background: var(--green-color);
+  color: #EDEDEF;
+  &:disabled {
+    background: var(--modal-button-cancel-color);
+    cursor: not-allowed;
+  }
+}
+.login__hint {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  background: var(--green-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 5px;
+  text-align: left;
+  &.login__hint_mt-10 {
+    margin-top: 10px;
+  }
+}
+.login__error {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  background: var(--red-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-top: 5px;
+  text-align: left;
+}

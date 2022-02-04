@@ -1,0 +1,214 @@
+.settings-whatsapps__header {
+  position: relative;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+/*   border-bottom: 1px solid var(--separator-color); */
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  color: var(--settings-header-color);
+  &_enter{
+    color: #1D1D35;
+    font-size: 12px;
+    padding: 8px 24px 8px 14px;
+    background: linear-gradient(45.66deg, #22A595 -40.44%, #84D160 120.07%);
+    border-radius: 6px;
+    font-weight: 400;
+    &-svg{
+      padding-right: 10px;
+      font-weight: 500;
+    }
+  }
+}
+.settings-whatsapp__element-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings-whatsapp__profile_img{
+  width: 40px;
+  border-radius: 100%;
+}
+.settings-whatsapp__buttons-account{
+  display: flex;
+  align-items: center;
+}
+.settings-whatsapp__buttons-account_del{
+  border: 1px solid #40406B;
+  font-size: 14px;
+  color: #EB5757;
+  border-radius: 6px;
+  padding: 4px 12px;
+}
+.settings-whatsapp__buttons-account_activate{
+  border: 1px solid #40406B;
+  font-size: 14px;
+  color: #5EC075;
+  border-radius: 6px;
+  padding: 4px 12px;
+  margin-left: 20px;
+}
+.settings-whatsapp__buttons-account_eidt{
+  border: 1px solid #40406B;
+  font-size: 14px;
+  color: #9797BB;
+  border-radius: 6px;
+  padding: 4px 12px;
+  margin-left: 20px;
+}
+.settings-whatsapp__folder{
+  display: flex;
+  color: #9797BB;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 18px;
+}
+.settings-whatsapps__scroll-container {
+  height: calc(100% - 79px);
+  position: relative;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+.settings-whatsapps__content {
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  padding-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.settings-whatsapps__element {
+  width: 260px;
+  height: 209px;
+  border-radius: 9px;
+  background: #252544;
+  margin: 0 8px 27px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:last-child{
+    margin-right: 0px;
+  }
+}
+.settings-whatsapp__status{
+  color: #5EC075;
+  font-size: 12px;
+  background: #5EC0751A;
+  border-radius: 22px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  &_diactive{
+    color: #EB5757;
+    font-size: 12px;
+    background: #EB57571A;
+    border-radius: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+  }
+}
+.settings-whatsapps__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #CFCFE4;
+  font-weight: 600;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  overflow: hidden;
+  span {
+    max-width: calc(100% - 80px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+  }
+}
+.settings-whatsapps__phone {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #9797BB;
+  text-align: left;
+  padding-bottom: 6px;
+  &.settings-whatsapps__phone_active {
+    background: var(--green-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &.settings-whatsapps__phone_warning {
+    background: var(--yellow-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &.settings-whatsapps__phone_error {
+    background: var(--red-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.settings-whatsapps__action-container {
+  display: flex;
+  align-items: center;
+}
+.settings-whatsapps__action {
+  border-radius: 3px;
+  width: 29px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.element-noneWhats{
+  width: 100%;
+  color: #9797BB;
+  font-size: 18px;
+  background: #252544;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  min-height: 600px;
+  max-height: 1500px;
+  border-radius: 6px;
+  flex-direction: column;
+  &__button{
+    margin-top: 34px;
+    color: #1D1D35;
+    background: linear-gradient(45.66deg, #22A595 -40.44%, #84D160 120.07%);
+    padding: 8px 26px;
+    border-radius: 6px;
+  }
+}
+
+.active-button-disabled{
+  background: transparent;
+  border: 1px solid #6a709d;
+  background: #6a709d;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 6px;
+  padding: 8px 16px;
+}

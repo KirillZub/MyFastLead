@@ -1,0 +1,48 @@
+.settings-partners-history__table_row{
+    display: flex;
+    background: #1D1D35;
+    padding: 24px 20px;
+    border-bottom: 2px solid #252544;
+    &:last-child{
+        border-radius: 0px 0px 6px 6px;
+        border-bottom: none;
+    }
+    &-cell{
+        font-size: 12px;
+        color: #CFCFE4;
+        width: 20%;
+        &:nth-child(1){
+            width: 20%;
+        }
+        &:nth-child(2){
+            width: 20%;
+        }
+        &:nth-child(4){
+            width: 25%;
+        }
+        &:last-child{
+            text-align: center;
+            margin-left: auto;
+            width: 110px;
+        }
+    }
+}
+
+.row-cell-error{
+    background: #EB57571A;
+    color: #EB5757;
+    width: 120px;
+    padding: 4px 12px;
+    border-radius: 22px;
+    text-align: center;
+    margin-left: 25px;
+}
+.row-cell-accept{
+    background: #5EC0751A;
+    color: #5EC075;
+    width: 110px;
+    padding: 4px 12px;
+    border-radius: 22px;
+    text-align: center;
+    margin-left: 25px;
+}

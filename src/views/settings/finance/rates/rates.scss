@@ -1,0 +1,352 @@
+.settings-finance__rates{
+    &_title{
+        text-align: left;
+        color: #CFCFE4;
+        font-size: 18px;
+        margin-top: 28px;
+        font-weight: 600;
+        &:first-child{
+            margin-top: 0px;
+        }
+    }
+}
+.tariff_active{
+    border: 1px solid #5EC075;
+    color: #5EC075;
+}
+.settings-finance__payment{
+    margin-top: 25px;
+    text-align: left;
+    display: flex;
+}
+.settings-finance__type-payment{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    
+    &_mounth{
+        text-align: left;
+        width: 100%;
+        height: 60px;
+        color: #F0F0FA;
+        border: 1px solid #14142700;
+        border-radius: 6px;
+        font-size: 14px;
+        padding: 8px 14px;
+        margin-right: 12px;
+        background: #252544;
+        &:last-child{
+            margin-right: 0px;
+        }
+        &-seil{
+            color: #9797BB;
+            font-size: 12px;
+            padding-top: 6px;
+        }
+        &:hover{
+            border: 1px solid #5EC075;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    }
+}
+.tariff_active-payment{
+    border: 1px solid #5EC075;
+    color: #5EC075;
+    background: #252544;
+}
+.settings-finance__calculator{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    width: 100%;
+    border-collapse: collapse;
+    height: 220px;
+    &_titles{
+        height: 37px;
+        background-color: #252544;
+        display: flex;
+        align-items: center;
+        border-radius: 6px 6px 0px 0px;
+        & td{
+            text-align: left;
+            width: 100%;
+            color: #9797BB;
+            font-size: 10px;
+            /* padding: 0px 0px 0px 50px; */
+            &:first-child{
+                padding: 0px 20px 0px 20px;
+            }
+            &:nth-child(3){
+                padding: 0px 0px 0px 10px;
+            }
+            &:nth-child(4){
+                padding: 0px 0px 0px 0px;
+            }
+            &:last-child{
+                border-top-right-radius: 10px;
+                padding: 0px 20px 0px 10px;
+                text-align: end;
+            }
+        }
+    }
+    &_values{
+        height: 60px;
+        background-color: #1D1D35;
+        border-bottom: 1px solid #252544;
+        display: flex;
+        align-items: center;
+        &-cell{
+            text-align: left;
+            width: 100%;
+            color: #CFCFE4;
+            font-size: 12px;
+            /* padding: 0px 0px 0px 50px; */
+            &:first-child{
+                padding: 0px 20px 0px 20px;
+                display: flex;
+                & img{
+                    margin-right: 12px;
+                }
+            }
+            &:nth-child(3){
+                padding: 0px 0px 0px 20px;
+            }
+            &:nth-child(4){
+                padding: 0px 0px 0px 10px;
+            }
+            &:last-child{
+                padding: 0px 20px 0px 10px;
+                text-align: end;
+            }
+        }
+        &:last-child{
+            border-bottom: none;
+            border-radius: 0px 0px 6px 6px;
+        }
+        &-days{
+            padding-left: 15px;
+        }
+        &-text{
+            padding-left: 20px;
+            /* margin-top: -20px; */
+            display: flex;
+        }
+        &-question{
+            margin-top: 2px;
+            align-items: center; 
+            cursor: pointer;
+            width: fit-content;
+            /* display: flex; */
+            position: absolute;
+
+            &:hover .settings-finance__calculator_message{
+            display: block;
+            transition: all 0.3s;
+            z-index: 1;
+        }
+        }
+       
+    }
+}
+.settings-finance__calculator_message{
+    position: absolute;
+    margin-top: -8px;
+    display: none;
+    &-arrov{
+        /* display: none; */
+        border: 10px solid transparent;
+        border-bottom: 10px solid #F0F0FA;
+        width: 5px;
+        margin-left: -3px;
+    }
+    &-text{
+        width: 300px;
+        background: #F0F0FA;
+        color: #252544;
+        padding: 18px 18px 18px 18px;
+        border-radius: 6px;
+        margin-left: -35px;
+        /* display: none; */
+    }
+}
+/* .settings-finance__calculator_values */
+.settings-finance__total{
+    margin-top: 30px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    & h2{
+        color: #CFCFE4;
+        font-size: 18px;
+        line-height: 0px;
+        padding: 0px 10px 10px 10px;
+    }
+    &_without-discount{
+        margin-top: 0px;
+        & h2{
+            font-size: 14px;
+            padding-bottom: 5px;
+            position: relative;
+            &:last-child{
+                color: #9797BB;
+                &:before{
+                    position: absolute;
+                    content: "";
+                    left: 10%;
+                    top: 10%;
+                    right: 0;
+                    border-top: 1px solid;
+                    border-color: inherit;
+                    width: 60px;
+                    background-color: #EB5757;
+                    -webkit-transform:rotate(-5deg);
+                    -moz-transform:rotate(-5deg);
+                    -ms-transform:rotate(-5deg);
+                    -o-transform:rotate(-5deg);
+                    transform:rotate(-15deg);}
+            }
+        }
+    }
+    &_hr{
+        border: 1px solid #252544;
+    } 
+}
+.settings-finance__pay{
+    margin-top: 25px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    &-button{
+        padding: 8px 26px;
+        font-size: 16px;
+        background: linear-gradient(45.66deg, #22A595 -40.44%, #84D160 120.07%);
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}
+
+.settings-finance__btn{
+    display: flex;
+    padding-top: 10px;
+    margin-left: -25px;
+    line-height: 20px;
+    &_minus{
+        background: none;
+        padding-right: 15px;
+        cursor: pointer;
+        & svg:hover{
+            border-radius: 3px;
+            background: #ffffff67;
+        }
+        & svg:active{
+            background: #40406B;
+            transition: all 0.3s;
+            & rect{
+                stroke: #5EC075;
+            }
+            & path{
+                fill: #5EC075;
+            }
+        }
+    }
+    &_plus{
+        background: none;
+        padding-left: 15px;
+        cursor: pointer;
+        & svg:hover{
+            border-radius: 3px;
+            background: #ffffff67;
+            transition: all 0.3s;
+        }
+        & svg:active{
+            background: #40406B;
+            & rect{
+                stroke: #5EC075;
+            }
+            & path{
+                fill: #5EC075;
+            }
+        }
+    }
+    &_reset{
+        background: #141427;
+        color: #EB5757;
+        border: 1px solid #252544;
+        border-radius: 6px;
+        padding: 4px 20px 4px 20px;
+        margin-left: -30px;
+        cursor: pointer;
+        &:hover{
+            background: #EB5757;
+            color: #CFCFE4;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 18px;
+    margin-left: 10px;
+  }
+  
+.switch input {
+    display: none;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1D1D35;
+    border: 2px solid #9797BB;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    top: 1px;
+    bottom: 4px;
+    background-color: #9797BB;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+  
+input:checked + .slider {
+    border: 1px solid #5EC075;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+    background: #5EC075;
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.img-instagram{
+    background: linear-gradient(49.12deg, #FFDD55 6.62%, #FF543E 50.06%, #C837AB 93.5%);
+    border-radius: 6px;
+}
